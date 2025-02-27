@@ -7,6 +7,7 @@ import javax.swing.*;
  * 
  * @author Jim Teresco
  * @author Ira Goldstein
+ * @author Toben Feltman and Payton Burke
  * @version Spring 2025
  */
 
