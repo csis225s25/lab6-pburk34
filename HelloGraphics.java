@@ -27,6 +27,10 @@ class GraphicsPanel extends JPanel {
         int ascent = getFontMetrics(getFont()).getAscent();
         FontMetrics metrics = getFontMetrics(getFont());
         int width = metrics.stringWidth(TOOL_TIP_TEXT_KEY);
+        Font font =  new Font(Font.SANS_SERIF, Font.BOLD, 16);
+        g.setFont(font);
+        setBackground(Color.BLUE);
+        setForeground(Color.ORANGE);
         g.drawString("Hello, Java Graphics World!", (getWidth()/2) - width, (getHeight()/2)-ascent);
     }
 }
