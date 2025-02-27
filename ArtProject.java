@@ -24,7 +24,24 @@ class GraphicsPanel extends JPanel {
         // the Graphics object passed to this method has many methods
         // we can use to draw in the area of the panel, one of which
         // allows us to draw some shapes and stuff
-        f.drawArc(40,40,40,40,40,40);
+        setBackground(Color.lightGray);
+
+        f.setColor(Color.magenta);
+        f.drawRect(40,40,500,500);
+        int[] xPoints = {100, 200};
+        int[] yPoints = {400, 800};
+
+        f.setColor(Color.red);
+        f.drawPolygon(xPoints, yPoints,2);
+
+        f.setColor(Color.green);
+        f.fillOval(250, 250, 50, 50);
+
+        f.setColor(Color.PINK);
+        f.fillArc(100, 100, 200, 150, 45, 90);
+
+        f.setColor(Color.orange);
+        f.fillOval(150, 300, 400, 400);
     
     }
 }
